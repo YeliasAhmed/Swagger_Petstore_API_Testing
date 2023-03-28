@@ -1,0 +1,445 @@
+{
+	"info": {
+		"_postman_id": "12c91279-766d-4d73-af4c-7bd433bec69d",
+		"name": "User",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24971842"
+	},
+	"item": [
+		{
+			"name": "Create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 100,\n  \"username\": \"ya1\",\n  \"firstName\": \"yelias\",\n  \"lastName\": \"ahmed\",\n  \"email\": \"ya1.qps@gmail.com\",\n  \"password\": \"ya1qups\",\n  \"phone\": \"01920834881\",\n  \"userStatus\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 101,\n  \"username\": \"unirest123\",\n  \"firstName\": \"Uni\",\n  \"lastName\": \"Rest\",\n  \"email\": \"unirest@gmail.com\",\n  \"password\": \"12345\",\n  \"phone\": \"98596252\",\n  \"userStatus\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user by the user name",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 101,\n  \"username\": \"unirest123\",\n  \"firstName\": \"Uni\",\n  \"lastName\": \"Rest\",\n  \"email\": \"unirest@gmail.com\",\n  \"password\": \"12345\",\n  \"phone\": \"98596252\",\n  \"userStatus\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/unirest123",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"unirest123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get user by the user name",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 100,\n  \"username\": \"ya1\",\n  \"firstName\": \"yelias\",\n  \"lastName\": \"ahmed\",\n  \"email\": \"ya1.qups@gmail.com\",\n  \"password\": \"ya1qups\",\n  \"phone\": \"01920834881\",\n  \"userStatus\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/ya1",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"ya1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Creates list of users using given input array",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"id\": 102,\n    \"username\": \"qups\",\n    \"firstName\": \"qu\",\n    \"lastName\": \"ps\",\n    \"email\": \"qups@gmail.com\",\n    \"password\": \"123\",\n    \"phone\": \"9823623\",\n    \"userStatus\": 1\n  },\n{\n    \"id\": 103,\n    \"username\": \"john420\",\n    \"firstName\": \"john\",\n    \"lastName\": \"doe\",\n    \"email\": \"doe@gmail.com\",\n    \"password\": \"1234\",\n    \"phone\": \"123658\",\n    \"userStatus\": 0\n  },\n{\n    \"id\": 104,\n    \"username\": \"lorem123\",\n    \"firstName\": \"lorem\",\n    \"lastName\": \"ipsom\",\n    \"email\": \"ipsom@gmail.com\",\n    \"password\": \"321\",\n    \"phone\": \"0123478995\",\n    \"userStatus\": 1\n  }\n\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/createWithList",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"createWithList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Creates list of users using given input array2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n        \"id\": 105,\n        \"username\": \"qups1\",\n        \"firstName\": \"qu\",\n        \"lastName\": \"ps1\",\n        \"email\": \"qups1@gmail.com\",\n        \"password\": \"1238\",\n        \"phone\": \"982363\",\n        \"userStatus\": 1\n    },\n    {\n        \"id\": 100,\n        \"username\": \"john120\",\n        \"firstName\": \"john\",\n        \"lastName\": \"doe\",\n        \"email\": \"doe1@gmail.com\",\n        \"password\": \"15234\",\n        \"phone\": \"1273658\",\n        \"userStatus\": 1\n    },\n    {\n        \"id\": 107,\n        \"username\": \"lorem12\",\n        \"firstName\": \"loremm\",\n        \"lastName\": \"ipsom2\",\n        \"email\": \"ipsom2@gmail.com\",\n        \"password\": \"32451\",\n        \"phone\": \"01658995\",\n        \"userStatus\": 0\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/createWithArray",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"createWithArray"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Updated user",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 101,\n  \"username\": \"urest12\",\n  \"firstName\": \"Uni\",\n  \"lastName\": \"Rest\",\n  \"email\": \"urest@gmail.com\",\n  \"password\": \"12545\",\n  \"phone\": \"9859652\",\n  \"userStatus\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/urest12",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"urest12"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Updated user2",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 101,\r\n  \"username\": \"unirest123\",\r\n  \"firstName\": \"Uni\",\r\n  \"lastName\": \"Rest\",\r\n  \"email\": \"unirest@gmail.com\",\r\n  \"password\": \"12345\",\r\n  \"phone\": \"98596252\",\r\n  \"userStatus\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/unirest123",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"unirest123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/john120",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"john120"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logs user into the system",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/login?username=ya1&password=ya1qups",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "ya1"
+						},
+						{
+							"key": "password",
+							"value": "ya1qups"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Logs out current logged in user session",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/logout",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 0,\n  \"username\": \"abc\",\n  \"firstName\": \"a\",\n  \"lastName\": \"s\",\n  \"email\": \"abc@gmail.com\",\n  \"password\": \"asdf\",\n  \"phone\": \"985654\",\n  \"userStatus\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://petstore.swagger.io/v2/user",
+					"protocol": "http",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getUserByUserName",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 110,\n  \"username\": \"qups\",\n  \"firstName\": \"qu\",\n  \"lastName\": \"ps\",\n  \"email\": \"string@gmail.com\",\n  \"password\": \"123\",\n  \"phone\": \"123\",\n  \"userStatus\": 1\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/qups",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"qups"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetUserByUserName",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"id\": 101,\n  \"username\": \"unirest123\",\n  \"firstName\": \"Uni\",\n  \"lastName\": \"Rest\",\n  \"email\": \"unirest@gmail.com\",\n  \"password\": \"12345\",\n  \"phone\": \"98596252\",\n  \"userStatus\": 0\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/user/unirest123",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"user",
+						"unirest123"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
